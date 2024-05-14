@@ -49,7 +49,7 @@ def textanalysis():
             reciever = emailform['email']
             subject = emailform['subject']
             send_email(f"{subject} - Your AudioLec Lecture", session['transcript'], reciever,
-                       'hackathon2020', 'audiolec4@gmail.com', session['videos'], session['keywords'])
+                        'audiolec4@gmail.com', session['videos'], session['keywords'])
         keywords = api.sample_analyze_entities(session['transcript'])
         session["keywords"] = []
 
