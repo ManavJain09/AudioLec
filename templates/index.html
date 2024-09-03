@@ -376,11 +376,7 @@
 						<h1>Contact Us</h1>
 					</div>
 					<form action="/contactform" style="margin: auto; width: 100%" method="POST">
-						{% if session['email_sent'] == True %}
-						<h1>Success, email sent!</h1>
-						{% elif session['valid'] == False %}
-						<h1>Please fill out the whole form</h1>
-						{% endif %}
+						
 						<div class="contactusform" style="width: 100%; justify-content: center">
 							<div style="width: 100%; margin-right: 10px">
 								<label for="" style="width: 100%">Email</label>
@@ -406,7 +402,7 @@
 									type="text"
 									class="inputdivs"
 									name="message"
-									style="height: 300px; width: auto; padding-bottom: 250px"
+									style="height: 300px; width: 600px; padding-bottom: 250px"
 								/>
 								<br />
 							</div>
